@@ -1,5 +1,0 @@
-.vs/
-.git/
-*.code-workspace
-config/database.json
-config/email.json
