@@ -1943,13 +1943,20 @@ function playerArrivedAtJobRouteStop(client) {
 		return false;
 	}
 
-	if(doesPlayerHaveJobType(client, VRR_JOB_BUS)) {
-		playerArrivedAtBusStop(client);
-	} else if(doesPlayerHaveJobType(client, VRR_JOB_GARBAGE)) {
-		playerArrivedAtGarbageStop(client);
-	} else if(doesPlayerHaveJobType(client, VRR_JOB_POLICE)) {
-		playerArrivedAtPolicePatrolPoint(client);
-	}
+	if(isLastStopOnJobRoute(getPlayerData(client).jobRouteJobLocation, getPlayerData(client).jobRoute, getPlayerData(client).jobRouteStop)) {
+        finishSuccessfulJobRoute(client);
+        return false;
+    }
+
+	showGameMessage(client, getJobRouteData(getPlayerData(client).jobRoute).arriveAtLocationMessage, getJobData(getJobRouteData(getPlayerData(client).jobRoute).jobIndex).colour, 5000);
+    freezeJobVehicleForRouteStop(client);
+
+    getPlayerData(client).jobRouteStop = getNextStopOnJobRoute(getPlayerData(client).jobRoute, getJobRouteData(getPlayerData(client).jobRoute).jobLocation, getPlayerData(client).jobRouteStop);
+    setTimeout(function() {
+        unFreezeJobVehicleForRouteStop(client);
+        showCurrentJobStop(client);
+        showGameMessage(client, getJobRouteData(getPlayerData(client).jobRoute).nextLocationMessage, getJobData(getJobRouteData(getPlayerData(client).jobRoute).jobIndex).colour, 3500);
+    }, 5000);
 }
 
 // ===========================================================================

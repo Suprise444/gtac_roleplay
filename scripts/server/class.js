@@ -179,9 +179,8 @@ class ClientData {
 		this.clientVersion = "0.0.0";
 		this.loginAttemptsRemaining = 3;
 
-		this.jobRoute = false;
-		this.jobRouteStop = false;
-		this.jobRouteIsland = false;
+		this.jobRoute = 0;
+		this.jobRouteStop = 0;
 		this.jobRouteVehicle = false;
 
 		this.spawned = false;
