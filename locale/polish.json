@@ -309,7 +309,7 @@
     "VehicleNotForRent": "Tego pojazdu nie można wypożyczyć!",
     "BusinessNotForSale": "Ten biznes nie jest na sprzedaż!",
     "BusinessNotForRent": "Tego biznesu nie można wypożyczyć!",
-    "HouseNotForSale": "This house is not for sale!",
+    "HouseNotForSale": "To mieszkanie nie jest na sprzedaż!",
     "HouseNotForRent": "Tego biznesu nie można wypożyczyć!",
     "DealershipPurchaseTestDrive": "Odjedź pojazdem od dealera samochodów aby go kupić, lub wysiądź aby anulować zakup.",
     "DealershipPurchaseExitedVehicle": "Anulowałeś kupno pojazdu, ponieważ wysiadłeś z pojazdu!",
@@ -322,13 +322,13 @@
         "Russian": "Rosyjski",
         "Spanish": "Hiszpański",
         "German": "Niemiecki",
-        "Dutch": "Holender",
+        "Dutch": "Holenderski",
         "Polish": "Polski"
     },
-    "HeaderPlayerHousesList": "Player Houses ({1})",
-    "HeaderPlayerStaffFlagsList": "Player Staff Flags ({1})",
-    "HeaderStaffFlagsList": "Staff Flags",
-    "NonRPName": "Non-RP name! Choose a new one:",
-    "InvalidStaffFlag": "Staff flag not found!",
-    "InvalidClanFlag": "Clan flag not found!"
+    "HeaderPlayerHousesList": "Mieszkania Gracza ({1})",
+    "HeaderPlayerStaffFlagsList": "Znaczniki Graczy Administracyjnych ({1})",
+    "HeaderStaffFlagsList": "Znaczniki Administracji",
+    "NonRPName": "Nie roleplay'owa nazwa! Wybierz inną:",
+    "InvalidStaffFlag": "Znacznik Administracji nie znaleziony!",
+    "InvalidClanFlag": "Znacznik Klanu nie znaleziony!"
 }
